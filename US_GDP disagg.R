@@ -52,6 +52,7 @@ df_plot <- data.frame(Date = as.Date(time(gdp_m_d)),
   Denton = as.numeric(gdp_m_d),
   ChowLin = as.numeric(gdp_m_c))
 
+#SEE: CL vs Denton.png
 ggplot(df_plot, aes(x = Date)) +
   geom_line(aes(y = Denton, color = "Denton")) +
   geom_line(aes(y = ChowLin, color = "Chow-Lin")) +
